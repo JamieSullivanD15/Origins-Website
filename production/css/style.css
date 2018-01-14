@@ -1,3 +1,64 @@
 * {
   margin: 0;
   padding: 0; }
+
+body, html {
+  height: 100%; }
+
+.parallax-image, .home, .benefits {
+  position: relative;
+  opacity: 0.80;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.container-fluid {
+  margin: 0;
+  padding: 0; }
+
+header {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333333;
+  color: #ffffff; }
+
+.navbar {
+  z-index: 1;
+  width: 17%;
+  position: fixed;
+  height: 100%;
+  background-color: #0c0c0c; }
+
+.home {
+  background-image: url("/images/ring.jpg");
+  min-height: 100%; }
+  .home .intro-text {
+    padding-top: 500px;
+    color: white; }
+
+.about {
+  background-color: #333333;
+  color: #ffffff; }
+
+.timetable {
+  background-color: #0c0c0c;
+  color: #ffffff; }
+
+.benefits {
+  background-image: url("/images/stretch.jpg");
+  transform: scaleX(-1);
+  min-height: 100%; }
+  .benefits .benefits-text {
+    color: #ffffff;
+    transform: scaleX(-1); }
+
+.contact {
+  background-color: #333333;
+  color: #ffffff; }
+
+footer {
+  background-color: #0c0c0c;
+  color: #ffffff; }

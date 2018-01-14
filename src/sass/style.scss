@@ -5,3 +5,93 @@
   margin: 0;
   padding: 0;
 }
+
+body, html {
+  height: 100%;
+}
+
+.parallax-image {
+  position: relative;
+  opacity: 0.80;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container-fluid  {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $dark;
+  color: $white;
+}
+
+.navbar {
+  z-index: 1;
+  width: 17%;
+  position: fixed;
+  height: 100%;
+  background-color: $primary;
+  img {
+    //width: 100%;
+  }
+
+}
+
+#main-content {
+
+}
+
+.home {
+  @extend .parallax-image;
+  background-image: url('/images/ring.jpg');
+  min-height: 100%;
+
+  .intro-text {
+    padding-top: 500px;
+    color: white;
+  }
+}
+
+.about {
+  background-color: $dark;
+  color: $white;
+}
+
+.timetable {
+  background-color: $primary;
+  color: $white;
+}
+
+.benefits {
+  // -moz-transform: scaleX(-1);
+  // -o-transform: scaleX(-1);
+  // -webkit-transform: scaleX(-1);
+
+  @extend .parallax-image;
+  background-image: url('/images/stretch.jpg');
+  transform: scaleX(-1);
+  min-height: 100%;
+
+  .benefits-text {
+    color: $white;
+    transform: scaleX(-1);
+  }
+}
+
+.contact {
+  background-color: $dark;
+  color: $white;
+}
+
+footer {
+  background-color: $primary;
+  color: $white;
+}
