@@ -10,11 +10,29 @@
 
   <body>
 
-    <header>
-      Origins Muay-Thai
+    <header class="row m-0">
+      <span class="col-11">Origins Muay-Thai</span>
+
+      <span class="col-1">
+        <a href="#" onclick="openSideMenu()" class="menu-icon">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="3"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="3"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="3"/>
+          </svg>
+        </a>
+      </span>
     </header>
 
     <div id="side-menu" class="side-nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Timetable</a>
+      <a href="#">Benefits</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div id="mobile-menu" class="mobile-nav">
       <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
       <a href="#">Home</a>
       <a href="#">About</a>
