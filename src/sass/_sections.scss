@@ -1,0 +1,39 @@
+.about {
+  @extend .main-content;
+  min-height: $section-height;
+  background-color: $secondary;
+  color: set-text-color($secondary);
+}
+
+.timetable {
+  @extend .main-content;
+  min-height: $section-height;
+  background-color: $dark;
+  color: set-text-color($dark);
+
+  table {
+    color: set-text-color($white);
+    background-color: $white;
+  }
+}
+
+.benefits {
+  @extend .main-content;
+  min-height: $section-height;
+  background-color: $secondary;
+  color: set-text-color($secondary);
+}
+
+.contact {
+  @extend .main-content;
+  min-height: $section-height;
+  background-color: $dark;
+  color: set-text-color($dark);
+}
+
+.location {
+  @extend .main-content;
+  min-height: $section-height;
+  background-color: $secondary;
+  color: set-text-color($secondary);
+}

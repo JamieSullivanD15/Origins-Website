@@ -3,7 +3,7 @@
   position: fixed;
   background-color: $primary;
   overflow-x: hidden;
-  opacity: 0.9;
+  //opacity: 0.9;
   top: 0;
   left: 0;
 
@@ -11,7 +11,7 @@
     padding: 10px 10px 10px 30px;
     text-decoration: none;
     font-size: 22px;
-    color: #ccc;
+    color: set-text-color($primary);
     display: block;
 
     &:hover {

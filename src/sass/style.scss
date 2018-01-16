@@ -1,6 +1,8 @@
 @import 'variables';
-@import 'mixins';
+@import 'functions';
 @import 'navigation';
+@import 'pimages';
+@import 'sections';
 
 * {
   margin: 0;
@@ -9,6 +11,7 @@
 
 body, html {
   height: 100%;
+  font-size: 16px;
 }
 
 header {
@@ -24,26 +27,13 @@ header {
   float: right;
 }
 
-.parallax-image {
-  position: relative;
-  opacity: 0.80;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.home {
+footer {
   @extend .main-content;
-  @extend .parallax-image;
-  background-image: url('/images/ring.jpg');
-  height: 100%;
+  background-color: $primary;
+  color: set-text-color($primary);
 }
 
-.about {
-  @extend .main-content;
-}
-
+// MEDIA QUERIES
 @media(max-width: 568px) {
   .side-nav {
     visibility: hidden;
@@ -52,6 +42,10 @@ header {
   .main-content {
     width: 100%;
     float: none;
+  }
+
+  .parallax-image {
+    background-attachment: scroll;
   }
 }
 
@@ -69,6 +63,7 @@ header {
     display: none;
   }
 }
+
 
 
 // .main {

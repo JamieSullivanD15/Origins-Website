@@ -29,13 +29,6 @@ gulp.task('copyHTML', function() {
     .pipe(browserSync.stream());
 });
 
-// Copy All Images in src to Production
-gulp.task('copyImages', function() {
-  gulp.src('src/images/*')
-    .pipe(gulp.dest('production/images'))
-    .pipe(browserSync.stream());
-});
-
 // Minify All HTML Files in Production Folder
 gulp.task('minifyHTML', function() {
   gulp.src('production/*.html')
@@ -72,7 +65,6 @@ gulp.task('serve', ['sass'], function() {
   gulp.watch(['src/sass/*.scss'], ['sass']);
   gulp.watch(['src/*.html'], ['copyHTML']);
   gulp.watch(['src/js/*.js'], ['concatJS']);
-  gulp.watch(['src/images/*'], ['copyImages']);
 });
 
 // Set Default Gulp Task to be Serve

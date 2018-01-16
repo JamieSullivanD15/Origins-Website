@@ -1,0 +1,33 @@
+.parallax-image {
+  height: 100%;
+  position: relative;
+  //opacity: 0.80;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.parallax-image1 {
+  @extend .main-content;
+  @extend .parallax-image;
+  background-image: url('/images/gym.jpg');
+}
+
+.parallax-image2 {
+  @extend .main-content;
+  @extend .parallax-image;
+  background-image: url('/images/stretch.jpg');
+}
+
+.parallax-image3 {
+  @extend .main-content;
+  @extend .parallax-image;
+  background-image: url('/images/felix-teep.jpg');
+}
+
+.parallax-image4 {
+  @extend .main-content;
+  @extend .parallax-image;
+  background-image: url('/images/scott.jpg');
+}
