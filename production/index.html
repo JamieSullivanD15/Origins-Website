@@ -77,7 +77,6 @@
     <section class="timetable">
       <div class="container">
         <div class="table-responsive">
-          <h2>Timetable</h2>
           <table class="table table-hover table-bordered table-sm">
             <tr>
               <th>Mon</th>
@@ -123,6 +122,22 @@
             </tr>
           </table> <!-- table -->
         </div> <!-- table-responsive -->
+
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            Muay-Thai Prices <br>
+            Adults: &euro;8 per class or &euro;60 per month. <br>
+            Kids: &euro;4 per class or &euro;35 per month. <br>
+            Private classes are also available.
+          </div>
+
+          <div class="col-12 col-sm-6">
+            Slam Fitness Prices <br>
+            &euro;8 per class or &euro;60 for 12 sessions. <br>
+            Private classes are also available.
+          </div>
+
+        </div>
       </div> <!-- container -->
     </section> <!-- timetable -->
 
@@ -165,21 +180,20 @@
     </section> <!-- contact -->
 
     <section class="location">
-      <div class="container">
 
-        <div class="col">
-          <h2>Location</h2>
-          Google Maps  to go here!
-        </div>
+      <div id="map" class="google-map">
 
-      </div> <!-- container -->
+      </div>
+
     </section> <!-- location -->
 
     <footer>
       <div class="container">
 
-        <div class="col">
-          <p>Copyright @JSDesign</p>
+        <div class="row">
+          <div class="col">
+            <p>Copyright @JSDesign</p>
+          </div>
         </div>
 
       </div> <!-- container -->
@@ -191,5 +205,6 @@
   <script type="text/javascript" src="js/jquery.slim.min.js"></script>
   <script type="text/javascript" src="js/tether.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 
 </html>

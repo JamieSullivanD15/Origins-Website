@@ -13,9 +13,32 @@
     font-size: 22px;
     color: set-text-color($primary);
     display: block;
+    position: relative;
 
     &:hover {
-      color: #fff;
+      color: red;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      margin-left: 30px;
+      width: 50%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: red;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    &:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
     }
   }
 }
