@@ -38,8 +38,11 @@
 
 .side-nav {
   @extend .nav-style;
-  //z-index: 1;
   width: 20%;
+
+  img {
+    width: 50%;
+  }
 }
 
 .mobile-nav {
@@ -60,7 +63,7 @@
     margin-top: 20px;
     margin-left: 70%;
     font-size: 36px;
-    
+
     &:focus{
       outline: none;
     }

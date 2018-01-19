@@ -20,7 +20,7 @@ header {
   background-color: $secondary;
   color: $white;
   position: fixed;
-  
+
   .menu-icon {
     cursor: pointer;
     border: none;
@@ -50,7 +50,9 @@ footer {
 }
 
 // MEDIA QUERIES
-@media(max-width: $phone-breakpoint) {
+
+// Screens below md-breakpoint
+@media(max-width: $md-breakpoint) {
   .side-nav {
     visibility: hidden;
   }
@@ -64,13 +66,19 @@ footer {
     background-attachment: scroll;
   }
 
+  #form-button {
+    width: 100%;
+    margin: 0 15px;
+  }
+
   // .timetable {
   //   font-size: 11px;
   //   letter-spacing: 0.1px;
   // }
 }
 
-@media(min-width: $phone-breakpoint) {
+// Screens above md-breakpoint
+@media(min-width: $md-breakpoint) {
   .mobile-nav {
     visibility: hidden;
     transition: 0.0s;
@@ -84,132 +92,3 @@ footer {
     display: none;
   }
 }
-
-
-
-// .main {
-//   background-color: $light;
-//   float: right;
-// }
-//
-// .side-nav {
-//   height: 100%;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   background-color: #111;
-//   opacity: 0.9;
-//   overflow-x: hidden;
-//   padding-top: 60px;
-//   transition: 0.5s;
-// }
-//
-// .side-nav a {
-//   padding: 10px 10px 10px 30px;
-//   text-decoration: none;
-//   font-size: 22px;
-//   color: #ccc;
-//   display: block;
-//   transition: 0.3s;
-// }
-//
-// .side-nav a:hover {
-//   color: #fff;
-// }
-//
-// .side-nav .btn-close {
-//   position: absolute;
-//   top: 0;
-//   right: 22px;
-//   font-size: 36px;
-//   margin-left: 50px;
-// }
-
-
-// .parallax-image {
-//   position: relative;
-//   opacity: 0.80;
-//   background-position: center center;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-attachment: fixed;
-// }
-//
-// .container-fluid  {
-//   margin: 0;
-//   padding: 0;
-// }
-//
-// header {
-//   z-index: 2;
-//   position: fixed;
-//   top: 0;
-//   width: 100%;
-//   background-color: $dark;
-//   color: $white;
-// }
-//
-// .navbar {
-//   z-index: 1;
-//   position: fixed;
-//   height: 100%;
-//   background-color: $primary;
-//   img {
-//     width: 10%;
-//   }
-// }
-//
-// .navbar-nav {
-//   display: block;
-// }
-//
-// #main-content {
-//
-// }
-//
-// .home {
-//   @extend .parallax-image;
-//   background-image: url('/images/ring.jpg');
-//   min-height: 100%;
-//
-//   .intro-text {
-//     padding-top: 500px;
-//     color: white;
-//   }
-// }
-//
-// .about {
-//   background-color: $dark;
-//   color: $white;
-// }
-//
-// .timetable {
-//   background-color: $primary;
-//   color: $white;
-// }
-//
-// .benefits {
-//   // -moz-transform: scaleX(-1);
-//   // -o-transform: scaleX(-1);
-//   // -webkit-transform: scaleX(-1);
-//
-//   @extend .parallax-image;
-//   background-image: url('/images/stretch.jpg');
-//   transform: scaleX(-1);
-//   min-height: 100%;
-//
-//   .benefits-text {
-//     color: $white;
-//     transform: scaleX(-1);
-//   }
-// }
-//
-// .contact {
-//   background-color: $dark;
-//   color: $white;
-// }
-//
-// footer {
-//   background-color: $primary;
-//   color: $white;
-// }

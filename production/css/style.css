@@ -28,6 +28,8 @@
 
 .side-nav {
   width: 20%; }
+  .side-nav img {
+    width: 50%; }
 
 .mobile-nav {
   z-index: 3;
@@ -49,6 +51,7 @@
 .parallax-image, .parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4 {
   height: 100%;
   position: relative;
+  opacity: 0.80;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,6 +59,13 @@
 
 .parallax-image1 {
   background-image: url("/images/gym.jpg"); }
+  .parallax-image1 .t {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase; }
 
 .parallax-image2 {
   background-image: url("/images/stretch.jpg"); }
@@ -89,6 +99,18 @@
   min-height: 100vh;
   background-color: #333333;
   color: #fff; }
+  .contact .form-group {
+    margin: 0;
+    padding: 0; }
+  .contact input[type=number]::-webkit-inner-spin-button,
+  .contact input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+  .contact textarea {
+    resize: none; }
+  .contact .btn {
+    margin: 0 15px 0 auto; }
 
 .location {
   min-height: 100vh;
@@ -138,16 +160,19 @@ footer {
   margin: 0 auto;
   padding: 0; }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .side-nav {
     visibility: hidden; }
   .main-content, .parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4, .about, .timetable, .benefits, .contact, .location, footer {
     width: 100%;
     float: none; }
   .parallax-image, .parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4 {
-    background-attachment: scroll; } }
+    background-attachment: scroll; }
+  #form-button {
+    width: 100%;
+    margin: 0 15px; } }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .mobile-nav {
     visibility: hidden;
     transition: 0.0s; }

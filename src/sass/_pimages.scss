@@ -1,7 +1,7 @@
 .parallax-image {
   height: 100%;
   position: relative;
-  //opacity: 0.80;
+  opacity: 0.80;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,6 +12,15 @@
   @extend .main-content;
   @extend .parallax-image;
   background-image: url('/images/gym.jpg');
+
+  .t {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+  }
 }
 
 .parallax-image2 {
