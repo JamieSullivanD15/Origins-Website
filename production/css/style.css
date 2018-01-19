@@ -14,27 +14,19 @@
     position: relative; }
     .nav-style a:hover, .side-nav a:hover, .mobile-nav a:hover {
       color: red; }
-    .nav-style a:before, .side-nav a:before, .mobile-nav a:before {
-      content: "";
+    .nav-style a:after, .side-nav a:after, .mobile-nav a:after {
+      content: '';
       position: absolute;
       margin-left: 30px;
-      width: 50%;
-      height: 2px;
       bottom: 0;
       left: 0;
-      background-color: red;
-      visibility: hidden;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s; }
-    .nav-style a:hover:before, .side-nav a:hover:before, .mobile-nav a:hover:before {
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1); }
+      width: 0%;
+      border-bottom: 2px solid red;
+      transition: 0.4s; }
+    .nav-style a:hover:after, .side-nav a:hover:after, .mobile-nav a:hover:after {
+      width: 105px; }
 
 .side-nav {
-  z-index: 1;
   width: 20%; }
 
 .mobile-nav {
@@ -44,9 +36,15 @@
   .mobile-nav a {
     transition: 0.3s; }
   .mobile-nav .btn-close {
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: transparent;
     margin-top: 20px;
     margin-left: 70%;
     font-size: 36px; }
+    .mobile-nav .btn-close:focus {
+      outline: none; }
 
 .parallax-image, .parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4 {
   height: 100%;
@@ -119,16 +117,28 @@ header {
   background-color: #666666;
   color: #ffffff;
   position: fixed; }
-
-.main-content, .parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4, .about, .timetable, .benefits, .contact, .location, footer {
-  width: 80%;
-  float: right; }
+  header .menu-icon {
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: transparent; }
+    header .menu-icon:focus {
+      outline: none; }
 
 footer {
   background-color: #0c0c0c;
   color: #fff; }
 
-@media (max-width: 568px) {
+.main-content, .parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4, .about, .timetable, .benefits, .contact, .location, footer {
+  width: 80%;
+  float: right; }
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0; }
+
+@media (max-width: 640px) {
   .side-nav {
     visibility: hidden; }
   .main-content, .parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4, .about, .timetable, .benefits, .contact, .location, footer {
@@ -137,7 +147,7 @@ footer {
   .parallax-image, .parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4 {
     background-attachment: scroll; } }
 
-@media (min-width: 568px) {
+@media (min-width: 640px) {
   .mobile-nav {
     visibility: hidden;
     transition: 0.0s; }

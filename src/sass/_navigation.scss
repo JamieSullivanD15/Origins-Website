@@ -19,33 +19,26 @@
       color: red;
     }
 
-    &:before {
-      content: "";
+    &:after {
+      content: '';
       position: absolute;
       margin-left: 30px;
-      width: 50%;
-      height: 2px;
       bottom: 0;
       left: 0;
-      background-color: red;
-      visibility: hidden;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
+      width: 0%;
+      border-bottom: 2px solid red;
+      transition: 0.4s;
     }
 
-    &:hover:before {
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
+    &:hover:after {
+      width: 105px;
     }
   }
 }
 
 .side-nav {
   @extend .nav-style;
-  z-index: 1;
+  //z-index: 1;
   width: 20%;
 }
 
@@ -60,8 +53,16 @@
   }
 
   .btn-close {
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: transparent;
     margin-top: 20px;
     margin-left: 70%;
     font-size: 36px;
+    
+    &:focus{
+      outline: none;
+    }
   }
 }

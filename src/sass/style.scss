@@ -20,11 +20,16 @@ header {
   background-color: $secondary;
   color: $white;
   position: fixed;
-}
-
-.main-content {
-  width: 80%;
-  float: right;
+  
+  .menu-icon {
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: transparent;
+    &:focus{
+      outline: none;
+    }
+  }
 }
 
 footer {
@@ -33,8 +38,19 @@ footer {
   color: set-text-color($primary);
 }
 
+.main-content {
+  width: 80%;
+  float: right;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
 // MEDIA QUERIES
-@media(max-width: 568px) {
+@media(max-width: $phone-breakpoint) {
   .side-nav {
     visibility: hidden;
   }
@@ -47,9 +63,14 @@ footer {
   .parallax-image {
     background-attachment: scroll;
   }
+
+  // .timetable {
+  //   font-size: 11px;
+  //   letter-spacing: 0.1px;
+  // }
 }
 
-@media(min-width: 568px) {
+@media(min-width: $phone-breakpoint) {
   .mobile-nav {
     visibility: hidden;
     transition: 0.0s;
