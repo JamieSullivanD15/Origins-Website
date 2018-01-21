@@ -1,11 +1,24 @@
+
+$section-height: 100vh;
+
+// COLOURS
 $primary: #0c0c0c;
 $secondary: #666666;
 $dark: #333333;
 $light: #999999;
 $white: #ffffff;
 
-$section-height: 100vh;
+// BREAKPOINTS
+$xs-breakpoint: 400px;  // Small Phones   < 400
+$sm-breakpoint: 576px;  // Big Phones     < 576
+$md-breakpoint: 768px;  // Tablets        < 768
+$lg-breakpoint: 992px;  // Small Laptops  > 992 < 1400
+$xl-breakpoint: 1400px; // Desktops       > 1400
 
-$sm-breakpoint: 576px;
-$md-breakpoint: 768px;
-$lg-breakpoint: 992px;
+// FONTS
+$body-font: 'Merriweather', serif;
+.header-font {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

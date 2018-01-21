@@ -3,54 +3,9 @@
 @import 'navigation';
 @import 'pimages';
 @import 'sections';
+@import 'main';
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body, html {
-  height: 100%;
-  font-size: 16px;
-}
-
-header {
-  width: 100%;
-  z-index: 2;
-  background-color: $secondary;
-  color: $white;
-  position: fixed;
-
-  .menu-icon {
-    cursor: pointer;
-    border: none;
-    color: white;
-    background-color: transparent;
-    &:focus{
-      outline: none;
-    }
-  }
-}
-
-footer {
-  @extend .main-content;
-  background-color: $primary;
-  color: set-text-color($primary);
-}
-
-.main-content {
-  width: 80%;
-  float: right;
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 0;
-}
-
-// MEDIA QUERIES
-
+// -- MEDIA QUERIES --
 // Screens below md-breakpoint
 @media(max-width: $md-breakpoint) {
   .side-nav {

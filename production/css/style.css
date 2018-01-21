@@ -1,4 +1,10 @@
+.header-font, .nav-style, .side-nav, .mobile-nav, .parallax-image1 .home-text h1, .about #about-text h3, .benefits h3, .benefits ul h4, .contact .contact-info h3, .contact form legend, header {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px; }
+
 .nav-style, .side-nav, .mobile-nav {
+  text-transform: uppercase;
   height: 100%;
   position: fixed;
   background-color: #0c0c0c;
@@ -6,52 +12,50 @@
   top: 0;
   left: 0; }
   .nav-style a, .side-nav a, .mobile-nav a {
-    padding: 10px 10px 10px 30px;
     text-decoration: none;
-    font-size: 22px;
     color: #fff;
     display: block;
     position: relative; }
-    .nav-style a:hover, .side-nav a:hover, .mobile-nav a:hover {
-      color: red; }
-    .nav-style a:after, .side-nav a:after, .mobile-nav a:after {
-      content: '';
-      position: absolute;
-      margin-left: 30px;
-      bottom: 0;
-      left: 0;
-      width: 0%;
-      border-bottom: 2px solid red;
-      transition: 0.4s; }
-    .nav-style a:hover:after, .side-nav a:hover:after, .mobile-nav a:hover:after {
-      width: 105px; }
 
 .side-nav {
-  width: 20%; }
-  .side-nav img {
-    width: 50%; }
+  width: 20%;
+  padding-top: 100px; }
+  .side-nav .links a:hover {
+    color: red; }
+  .side-nav .links a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid red;
+    transition: 0.4s; }
+  .side-nav .links a:hover:after {
+    width: 110px; }
 
 .mobile-nav {
   z-index: 3;
   width: 0px;
-  transition: 0.5s; }
+  transition: 0.5s;
+  opacity: 0.95; }
   .mobile-nav a {
-    transition: 0.3s; }
+    font-size: 22px;
+    transition: 0.3s;
+    padding: 0 0 30px 30px; }
   .mobile-nav .btn-close {
     cursor: pointer;
     border: none;
     color: white;
     background-color: transparent;
-    margin-top: 20px;
-    margin-left: 70%;
-    font-size: 36px; }
+    font-size: 44px;
+    padding: 50px 0 20px 190px; }
     .mobile-nav .btn-close:focus {
       outline: none; }
 
 .parallax-image, .parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4 {
   height: 100%;
   position: relative;
-  opacity: 0.80;
+  opacity: 0.90;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,13 +63,22 @@
 
 .parallax-image1 {
   background-image: url("/images/gym.jpg"); }
-  .parallax-image1 .t {
+  .parallax-image1 .home-text {
     position: absolute;
-    top: 60%;
+    top: 65%;
     width: 100%;
     text-align: center;
-    color: #fff;
-    text-transform: uppercase; }
+    color: #fff; }
+    .parallax-image1 .home-text img {
+      width: 110px; }
+    .parallax-image1 .home-text h1 {
+      text-transform: uppercase;
+      font-size: 18px;
+      margin-top: 15px;
+      letter-spacing: 2px; }
+    .parallax-image1 .home-text h2 {
+      font-size: 14px;
+      margin-top: 10px; }
 
 .parallax-image2 {
   background-image: url("/images/stretch.jpg"); }
@@ -79,38 +92,81 @@
 .about {
   min-height: 100vh;
   background-color: #666666;
-  color: #fff; }
+  color: #fff;
+  padding: 20px 5px; }
+  .about #about-text h3 {
+    font-size: 18px;
+    padding-top: 20px; }
+  .about #about-text p {
+    font-size: 16px; }
 
 .timetable {
   min-height: 100vh;
   background-color: #333333;
   color: #fff;
-  padding: 40px 0; }
+  padding: 20px 0;
+  font-size: 14px; }
   .timetable table {
+    font-size: 10px;
     color: #000;
     background-color: #ffffff; }
+    .timetable table th {
+      padding: 2px;
+      margin: 0; }
+    .timetable table td {
+      padding: 2px;
+      margin: 0; }
+  .timetable .prices div {
+    padding-top: 10px;
+    padding-bottom: 10px; }
 
 .benefits {
   min-height: 100vh;
   background-color: #666666;
-  color: #fff; }
+  color: #fff;
+  font-size: 14px; }
+  .benefits h3 {
+    font-size: 18px;
+    padding-top: 20px; }
+  .benefits ul h4 {
+    font-size: 16px;
+    padding-top: 20px; }
+  .benefits ul li {
+    padding-bottom: 10px;
+    margin-left: 15px; }
 
 .contact {
   min-height: 100vh;
   background-color: #333333;
-  color: #fff; }
-  .contact .form-group {
+  color: #fff;
+  font-size: 14px; }
+  .contact .contact-info img {
+    width: 22px;
+    margin-right: 15px;
+    padding-bottom: 5px; }
+  .contact .contact-info h3 {
+    font-size: 18px;
+    padding-top: 20px; }
+  .contact .contact-info a {
+    text-decoration: none;
+    color: #ffffff; }
+    .contact .contact-info a:hover {
+      color: red; }
+  .contact form legend {
+    font-size: 18px;
+    padding-top: 30px; }
+  .contact form .form-group {
     margin: 0;
     padding: 0; }
+  .contact form textarea {
+    resize: none; }
+  .contact form .btn {
+    margin: 0 15px 0 auto; }
   .contact input[type=number]::-webkit-inner-spin-button,
   .contact input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; }
-  .contact textarea {
-    resize: none; }
-  .contact .btn {
-    margin: 0 15px 0 auto; }
 
 .location {
   min-height: 100vh;
@@ -131,34 +187,40 @@
 
 body, html {
   height: 100%;
-  font-size: 16px; }
+  font-family: "Merriweather", serif; }
 
 header {
   width: 100%;
   z-index: 2;
-  background-color: #666666;
+  background-color: #0c0c0c;
   color: #ffffff;
-  position: fixed; }
+  position: fixed;
+  font-size: 16px;
+  text-transform: uppercase; }
   header .menu-icon {
     cursor: pointer;
     border: none;
     color: white;
-    background-color: transparent; }
+    background-color: transparent;
+    padding-top: 10px; }
     header .menu-icon:focus {
       outline: none; }
 
 footer {
   background-color: #0c0c0c;
-  color: #fff; }
+  color: #fff;
+  padding-top: 15px; }
+  footer p {
+    font-size: 14px;
+    float: right; }
 
 .main-content, .parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4, .about, .timetable, .benefits, .contact, .location, footer {
   width: 80%;
   float: right; }
 
 .container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 0; }
+  width: 100%;
+  margin: 0 auto; }
 
 @media (max-width: 768px) {
   .side-nav {
