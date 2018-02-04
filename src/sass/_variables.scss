@@ -9,11 +9,11 @@ $light: #999999;
 $white: #ffffff;
 
 // BREAKPOINTS
-$xs-breakpoint: 400px;  // Small Phones   < 400
-$sm-breakpoint: 576px;  // Big Phones     < 576
-$md-breakpoint: 768px;  // Tablets        < 768
-$lg-breakpoint: 992px;  // Small Laptops  > 992 < 1400
-$xl-breakpoint: 1400px; // Desktops       > 1400
+$xs-bp: 400px;  // Small Phones   < 400
+$sm-bp: 576px;  // Big Phones     < 576
+$md-bp: 768px;  // Tablets        < 768
+$lg-bp: 992px;  // Small Laptops  > 992 < 1400
+$xl-bp: 1400px; // Desktops       > 1400
 
 // FONTS
 $body-font: 'Merriweather', serif;

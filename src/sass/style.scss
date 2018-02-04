@@ -4,10 +4,13 @@
 @import 'pimages';
 @import 'sections';
 @import 'main';
+@import 'test';
 
 // -- MEDIA QUERIES --
+
+
 // Screens below md-breakpoint
-@media(max-width: $md-breakpoint) {
+@media(max-width: $md-bp) {
   .side-nav {
     visibility: hidden;
   }
@@ -33,7 +36,7 @@
 }
 
 // Screens above md-breakpoint
-@media(min-width: $md-breakpoint) {
+@media(min-width: $md-bp) {
   .mobile-nav {
     visibility: hidden;
     transition: 0.0s;

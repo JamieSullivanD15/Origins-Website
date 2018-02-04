@@ -15,7 +15,7 @@
 
   .home-text {
     position: absolute;
-    top: 65%;
+    top: 60%;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -27,17 +27,18 @@
     h1 {
       @extend .header-font;
       text-transform: uppercase;
-      font-size: 18px;
       margin-top: 15px;
       letter-spacing: 2px;
     }
 
     h2 {
-      font-size: 14px;
       margin-top: 10px;
       //letter-spacing: 1px;
     }
   } // home-text
+
+
+
 } // .parallax-image1
 
 .parallax-image2 {
