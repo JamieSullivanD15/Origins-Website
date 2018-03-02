@@ -1,9 +1,9 @@
 @import 'variables';
 @import 'functions';
-@import 'navigation';
-@import 'pimages';
-@import 'sections';
-@import 'main';
+@import 'modules/navigation';
+@import 'modules/pimages';
+@import 'modules/sections';
+@import 'modules/main';
 @import 'test';
 
 // -- MEDIA QUERIES --
