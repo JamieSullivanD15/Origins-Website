@@ -1,7 +1,18 @@
-.header-font, .nav-style, .side-nav, .mobile-nav, .parallax-image1 .home-text h1, .about #about-text h3, .benefits h3, .benefits ul h4, .contact .contact-info h3, .contact form legend, header {
-  font-family: 'Lato', sans-serif;
+.header-font, .about #about-text h3, .benefits h3, .benefits ul h4, .contact .contact-info h3, .contact form legend, header .header-title {
+  font-family: "Lato", sans-serif;
   font-weight: bold;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-size: 22px; }
+
+.nav-font, .nav-style, .side-nav, .mobile-nav {
+  font-family: "Lato", sans-serif;
+  font-size: 26px; }
+
+.h1-font, .parallax-image1 .home-text h1 {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 40px; }
 
 .nav-style, .side-nav, .mobile-nav {
   text-transform: uppercase;
@@ -12,7 +23,7 @@
   top: 0;
   left: 0; }
   .nav-style a, .side-nav a, .mobile-nav a {
-    padding: 10px 10px 10px 30px;
+    padding: 40px 10px 10px 50px;
     text-decoration: none;
     color: #fff;
     display: block;
@@ -20,20 +31,20 @@
 
 .side-nav {
   width: 20%;
-  padding-top: 100px; }
+  padding-top: 170px; }
   .side-nav .links a:hover {
     color: red; }
   .side-nav .links a:after {
     content: '';
     position: absolute;
-    margin-left: 30px;
+    margin-left: 53px;
     bottom: 0;
     left: 0;
     width: 0%;
     border-bottom: 2px solid red;
     transition: 0.4s; }
   .side-nav .links a:hover:after {
-    width: 110px; }
+    width: 150px; }
 
 .mobile-nav {
   z-index: 3;
@@ -41,16 +52,15 @@
   transition: 0.5s;
   opacity: 0.95; }
   .mobile-nav a {
-    font-size: 22px;
     transition: 0.3s;
-    padding: 0 0 30px 30px; }
+    padding: 0 0 40px 40px; }
   .mobile-nav .btn-close {
     cursor: pointer;
     border: none;
     color: white;
     background-color: transparent;
     font-size: 44px;
-    padding: 50px 0 20px 190px; }
+    padding: 45px 0 10px 200px; }
     .mobile-nav .btn-close:focus {
       outline: none; }
 
@@ -67,16 +77,10 @@
   background-image: url("/images/gym.jpg"); }
   .parallax-image1 .home-text {
     position: absolute;
-    top: 60%;
+    top: 75%;
     width: 100%;
     text-align: center;
     color: #fff; }
-    .parallax-image1 .home-text img {
-      width: 110px; }
-    .parallax-image1 .home-text h1 {
-      text-transform: uppercase;
-      margin-top: 15px;
-      letter-spacing: 2px; }
     .parallax-image1 .home-text h2 {
       margin-top: 10px; }
 
@@ -186,10 +190,12 @@ body, html {
 header {
   width: 100%;
   z-index: 2;
-  background-color: #0c0c0c;
+  background-color: #333333;
   color: #ffffff;
   position: fixed;
   text-transform: uppercase; }
+  header .logo {
+    width: 100px; }
   header .menu-icon {
     cursor: pointer;
     border: none;
@@ -242,9 +248,11 @@ footer {
   .home-text h2 {
     font-size: 16px; } }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .side-nav {
     visibility: hidden; }
+  .logo {
+    display: none; }
   .main-content, .parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4, .about, .timetable, .benefits, .contact, .location, footer {
     width: 100%;
     float: none; }

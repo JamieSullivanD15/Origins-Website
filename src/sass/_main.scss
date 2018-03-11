@@ -9,13 +9,20 @@ body, html {
 }
 
 header {
-  @extend .header-font;
   width: 100%;
   z-index: 2;
-  background-color: $primary;
+  background-color: $dark;
   color: $white;
   position: fixed;
   text-transform: uppercase;
+
+  .logo {
+    width: 100px;
+  }
+
+  .header-title {
+    @extend .header-font;
+  }
 
   .menu-icon {
     cursor: pointer;

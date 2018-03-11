@@ -17,8 +17,36 @@ $xl-bp: 1400px; // Desktops       > 1400
 
 // FONTS
 $body-font: 'Merriweather', serif;
+$heading-font: 'Lato', sans-serif;
+
+// SUPER CLASSES
 .header-font {
-  font-family: 'Lato', sans-serif;
+  font-family: $heading-font;
   font-weight: bold;
   letter-spacing: 1px;
+  font-size: 22px;
+}
+
+.nav-font {
+  font-family: $heading-font;
+  font-size: 26px;
+}
+
+.h1-font {
+  font-family: $heading-font;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+
+.h2-font {
+
+}
+
+.h3-font {
+
+}
+
+.paragraph-font {
+
 }

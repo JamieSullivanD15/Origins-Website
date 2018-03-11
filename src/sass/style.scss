@@ -1,52 +1,7 @@
 @import 'variables';
 @import 'functions';
-@import 'modules/navigation';
-@import 'modules/pimages';
-@import 'modules/sections';
-@import 'modules/main';
-@import 'test';
-
-// -- MEDIA QUERIES --
-
-
-// Screens below md-breakpoint
-@media(max-width: $md-bp) {
-  .side-nav {
-    visibility: hidden;
-  }
-
-  .main-content {
-    width: 100%;
-    float: none;
-  }
-
-  .parallax-image {
-    background-attachment: scroll;
-  }
-
-  #form-button {
-    width: 100%;
-    margin: 0 15px;
-  }
-
-  // .timetable {
-  //   font-size: 11px;
-  //   letter-spacing: 0.1px;
-  // }
-}
-
-// Screens above md-breakpoint
-@media(min-width: $md-bp) {
-  .mobile-nav {
-    visibility: hidden;
-    transition: 0.0s;
-
-    a {
-      transition: 0.0s;
-    }
-  }
-
-  .menu-icon {
-    display: none;
-  }
-}
+@import 'navigation';
+@import 'pimages';
+@import 'sections';
+@import 'main';
+@import 'media-queries';

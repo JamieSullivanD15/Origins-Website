@@ -53,3 +53,53 @@
     }
   }
 }
+
+// Screens below lg-breakpoint
+@media(max-width: $lg-bp) {
+  .side-nav {
+    visibility: hidden;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .header-title {
+
+  }
+
+  .main-content {
+    width: 100%;
+    float: none;
+  }
+
+  .parallax-image {
+    background-attachment: scroll;
+  }
+
+  #form-button {
+    width: 100%;
+    margin: 0 15px;
+  }
+
+  // .timetable {
+  //   font-size: 11px;
+  //   letter-spacing: 0.1px;
+  // }
+}
+
+// Screens above md-breakpoint
+@media(min-width: $md-bp) {
+  .mobile-nav {
+    visibility: hidden;
+    transition: 0.0s;
+
+    a {
+      transition: 0.0s;
+    }
+  }
+
+  .menu-icon {
+    display: none;
+  }
+}

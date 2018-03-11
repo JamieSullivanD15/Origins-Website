@@ -15,20 +15,13 @@
 
   .home-text {
     position: absolute;
-    top: 60%;
+    top: 75%;
     width: 100%;
     text-align: center;
     color: #fff;
 
-    img {
-      width: 110px;
-    }
-
     h1 {
-      @extend .header-font;
-      text-transform: uppercase;
-      margin-top: 15px;
-      letter-spacing: 2px;
+      @extend .h1-font;
     }
 
     h2 {
