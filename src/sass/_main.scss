@@ -17,11 +17,11 @@ header {
   text-transform: uppercase;
 
   .logo {
-    width: 100px;
+    width: 80px;
   }
 
   .header-title {
-    @extend .header-font;
+    font-family: $body-font;
   }
 
   .menu-icon {
@@ -44,7 +44,7 @@ footer {
   padding-top: 15px;
 
   p {
-    font-size: 14px;
+    @extend .paragraph-font;
     float: right;
   }
 } // footer

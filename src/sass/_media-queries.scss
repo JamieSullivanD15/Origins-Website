@@ -1,60 +1,102 @@
-// Screens less than 400px
+// Screens below 400px
 @media(max-width: $xs-bp) {
-  .home-text {
-    img {
-      width: 110px;
-    }
+  .h1-font {
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: green;
+  }
 
-    h1 {
-      font-size: 18px;
-      color: blue;
-    }
-
-    h2 {
-      font-size: 14px;
-    }
+  .h3-font {
+    font-size: 18px;
   }
 }
 
 // Screens between 400px and 576px
 @media(max-width: $sm-bp)
   and (min-width: $xs-bp) {
-  .home-text {
-    img {
-      width: 180px;
+    .h1-font {
+      letter-spacing: 2px;
+      font-size: 26px;
+      color: yellow;
     }
 
-    h1 {
+    .h3-font {
       font-size: 20px;
-      color: red;
     }
-
-    h2 {
-      font-size: 16px;
-    }
-  }
 }
 
 // Screens between 576px and 768px
 @media(max-width: $md-bp)
   and (min-width: $sm-bp) {
-  .home-text {
-    img {
-      width: 180px;
+    .h1-font {
+      letter-spacing: 2px;
+      font-size: 30px;
+      color: red;
     }
 
-    h1 {
-      font-size: 20px;
+    .h3-font {
+      font-size: 22px;
+    }
+}
+
+// Screens between 768px and 992px
+@media(max-width: $lg-bp)
+  and (min-width: $md-bp) {
+    .h1-font {
+      letter-spacing: 2px;
+      font-size: 34px;
+      color: orange;
+    }
+
+    .h3-font {
+      font-size: 24px;
+    }
+}
+
+// Screens between 992px and 1400px
+@media(max-width: $xl-bp)
+  and (min-width: $lg-bp) {
+    .h1-font {
+      letter-spacing: 2px;
+      font-size: 40px;
       color: purple;
     }
 
-    h2 {
-      font-size: 16px;
+    .h3-font {
+      font-size: 26px;
     }
+}
+
+// Screens above 1400px
+@media(min-width: $xl-bp) {
+    .h1-font {
+      letter-spacing: 2px;
+      font-size: 40px;
+      color: blue;
+    }
+
+    .h3-font {
+      font-size: 26px;
+    }
+}
+
+// Screens above 768px
+@media(min-width: $md-bp) {
+  .mobile-nav {
+    visibility: hidden;
+    transition: 0.0s;
+
+    a {
+      transition: 0.0s;
+    }
+  }
+
+  .menu-icon {
+    display: none;
   }
 }
 
-// Screens below lg-breakpoint
+// Screens below 992px
 @media(max-width: $lg-bp) {
   .side-nav {
     visibility: hidden;
@@ -86,20 +128,4 @@
   //   font-size: 11px;
   //   letter-spacing: 0.1px;
   // }
-}
-
-// Screens above md-breakpoint
-@media(min-width: $md-bp) {
-  .mobile-nav {
-    visibility: hidden;
-    transition: 0.0s;
-
-    a {
-      transition: 0.0s;
-    }
-  }
-
-  .menu-icon {
-    display: none;
-  }
 }

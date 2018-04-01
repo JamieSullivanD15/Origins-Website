@@ -8,13 +8,14 @@
   align-items: center;
 
   #about-text {
-    h3 {
-      @extend .header-font;
+    h2 {
+      @extend .h2-font;
       //font-size: 18px;
-      padding-top: 20px;
+      //padding-top: 20px;
     }
     p {
       //font-size: 16px;
+      @extend .paragraph-font;
     }
   }
 } // about
@@ -31,7 +32,6 @@
 
   table {
     //font-size: 10px;
-
     color: set-text-color($white);
     background-color: $white;
 
@@ -48,6 +48,7 @@
 
   .prices {
     div {
+      @extend .paragraph-font;
       padding-top: 10px;
       padding-bottom: 10px;
     }
@@ -63,20 +64,25 @@
   display: flex;
   align-items: center;
 
-  h3 {
-    @extend .header-font;
+  h2 {
+    @extend .h2-font;
     //font-size: 18px;
     padding-top: 20px;
   }
 
   ul {
-    h4 {
-      @extend .header-font;
+    h3 {
+      @extend .h3-font;
       //font-size: 16px;
       //padding-top: 20px;
     }
 
+    p {
+      @extend .paragraph-font;
+    }
+
     li {
+      @extend .paragraph-font;
       padding-bottom: 10px;
       margin-left: 20px;
     }
@@ -93,31 +99,32 @@
   display: flex;
   align-items: center;
 
+  h2 {
+    @extend .h2-font;
+  }
+
   .contact-info {
+    @extend .paragraph-font;
+
     img {
       width: 22px;
       margin-right: 15px;
       padding-bottom: 5px;
     }
 
-    h3 {
-      @extend .header-font;
-      //font-size: 18px;
-      padding-top: 20px;
-    }
-
     a {
+      @extend .paragraph-font;
       text-decoration: none;
-      color: $white;
+
       &:hover {
-        color: red;
+        color: orange;
       }
     }
   } // contact-info
 
   form {
-    legend {
-      @extend .header-font;
+    h3 {
+      @extend .h3-font;
       //font-size: 18px;
       padding-top: 30px;
     }

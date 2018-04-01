@@ -1,18 +1,28 @@
-.header-font, .about #about-text h3, .benefits h3, .benefits ul h4, .contact .contact-info h3, .contact form legend, header .header-title {
-  font-family: "Lato", sans-serif;
+.header-font {
+  font-family: "Merriweather", serif;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 22px; }
+  font-size: 22px;
+  color: purple; }
 
 .nav-font, .nav-style, .side-nav, .mobile-nav {
   font-family: "Lato", sans-serif;
   font-size: 26px; }
 
 .h1-font, .parallax-image1 .home-text h1 {
-  font-family: "Lato", sans-serif;
+  font-family: "Merriweather", serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 40px; }
+
+.h2-font, .about #about-text h2, .benefits h2, .contact h2 {
+  font-family: "Merriweather", serif; }
+
+.h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
+  font-family: "Lato", sans-serif; }
+
+.paragraph-font, .about #about-text p, .timetable .prices div, .benefits ul p, .benefits ul li, .contact .contact-info, .contact .contact-info a, footer p {
+  font-family: "Lato", sans-serif; }
 
 .nav-style, .side-nav, .mobile-nav {
   text-transform: uppercase;
@@ -77,11 +87,11 @@
   background-image: url("/images/gym.jpg"); }
   .parallax-image1 .home-text {
     position: absolute;
-    top: 75%;
+    top: 78%;
     width: 100%;
     text-align: center;
     color: #fff; }
-    .parallax-image1 .home-text h2 {
+    .parallax-image1 .home-text h3 {
       margin-top: 10px; }
 
 .parallax-image2 {
@@ -99,8 +109,6 @@
   color: #fff;
   display: flex;
   align-items: center; }
-  .about #about-text h3 {
-    padding-top: 20px; }
 
 .timetable {
   min-height: 100vh;
@@ -128,7 +136,7 @@
   color: #fff;
   display: flex;
   align-items: center; }
-  .benefits h3 {
+  .benefits h2 {
     padding-top: 20px; }
   .benefits ul li {
     padding-bottom: 10px;
@@ -144,14 +152,11 @@
     width: 22px;
     margin-right: 15px;
     padding-bottom: 5px; }
-  .contact .contact-info h3 {
-    padding-top: 20px; }
   .contact .contact-info a {
-    text-decoration: none;
-    color: #ffffff; }
+    text-decoration: none; }
     .contact .contact-info a:hover {
-      color: red; }
-  .contact form legend {
+      color: orange; }
+  .contact form h3 {
     padding-top: 30px; }
   .contact form .form-group {
     margin: 0;
@@ -185,7 +190,7 @@
 
 body, html {
   height: 100%;
-  font-family: "Merriweather", serif; }
+  font-family: "Lato", sans-serif; }
 
 header {
   width: 100%;
@@ -195,7 +200,9 @@ header {
   position: fixed;
   text-transform: uppercase; }
   header .logo {
-    width: 100px; }
+    width: 80px; }
+  header .header-title {
+    font-family: "Lato", sans-serif; }
   header .menu-icon {
     cursor: pointer;
     border: none;
@@ -210,7 +217,6 @@ footer {
   color: #fff;
   padding-top: 15px; }
   footer p {
-    font-size: 14px;
     float: right; }
 
 .main-content, .parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4, .about, .timetable, .benefits, .contact, .location, footer {
@@ -222,31 +228,61 @@ footer {
   margin: 0 auto; }
 
 @media (max-width: 400px) {
-  .home-text img {
-    width: 110px; }
-  .home-text h1 {
-    font-size: 18px;
-    color: blue; }
-  .home-text h2 {
-    font-size: 14px; } }
+  .h1-font, .parallax-image1 .home-text h1 {
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: green; }
+  .h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
+    font-size: 18px; } }
 
 @media (max-width: 576px) and (min-width: 400px) {
-  .home-text img {
-    width: 180px; }
-  .home-text h1 {
-    font-size: 20px;
-    color: red; }
-  .home-text h2 {
-    font-size: 16px; } }
+  .h1-font, .parallax-image1 .home-text h1 {
+    letter-spacing: 2px;
+    font-size: 26px;
+    color: yellow; }
+  .h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
+    font-size: 20px; } }
 
 @media (max-width: 768px) and (min-width: 576px) {
-  .home-text img {
-    width: 180px; }
-  .home-text h1 {
-    font-size: 20px;
+  .h1-font, .parallax-image1 .home-text h1 {
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: red; }
+  .h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
+    font-size: 22px; } }
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .h1-font, .parallax-image1 .home-text h1 {
+    letter-spacing: 2px;
+    font-size: 34px;
+    color: orange; }
+  .h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
+    font-size: 24px; } }
+
+@media (max-width: 1400px) and (min-width: 992px) {
+  .h1-font, .parallax-image1 .home-text h1 {
+    letter-spacing: 2px;
+    font-size: 40px;
     color: purple; }
-  .home-text h2 {
-    font-size: 16px; } }
+  .h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
+    font-size: 26px; } }
+
+@media (min-width: 1400px) {
+  .h1-font, .parallax-image1 .home-text h1 {
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: blue; }
+  .h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
+    font-size: 26px; } }
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    visibility: hidden;
+    transition: 0.0s; }
+    .mobile-nav a {
+      transition: 0.0s; }
+  .menu-icon {
+    display: none; } }
 
 @media (max-width: 992px) {
   .side-nav {
@@ -261,12 +297,3 @@ footer {
   #form-button {
     width: 100%;
     margin: 0 15px; } }
-
-@media (min-width: 768px) {
-  .mobile-nav {
-    visibility: hidden;
-    transition: 0.0s; }
-    .mobile-nav a {
-      transition: 0.0s; }
-  .menu-icon {
-    display: none; } }

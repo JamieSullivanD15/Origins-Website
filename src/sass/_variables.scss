@@ -16,8 +16,8 @@ $lg-bp: 992px;  // Small Laptops  > 992 < 1400
 $xl-bp: 1400px; // Desktops       > 1400
 
 // FONTS
-$body-font: 'Merriweather', serif;
-$heading-font: 'Lato', sans-serif;
+$heading-font: 'Merriweather', serif;
+$body-font: 'Lato', sans-serif;
 
 // SUPER CLASSES
 .header-font {
@@ -25,10 +25,11 @@ $heading-font: 'Lato', sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 22px;
+  color: purple;
 }
 
 .nav-font {
-  font-family: $heading-font;
+  font-family: $body-font;
   font-size: 26px;
 }
 
@@ -37,16 +38,20 @@ $heading-font: 'Lato', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 40px;
+  //color: orange;
 }
 
 .h2-font {
-
+  font-family: $heading-font;
+  //color: green;
 }
 
 .h3-font {
-
+  font-family: $body-font;
+  //color: yellow;
 }
 
 .paragraph-font {
-
+  font-family: $body-font;
+  //color: red;
 }

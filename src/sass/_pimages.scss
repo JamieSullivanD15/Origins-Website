@@ -15,7 +15,7 @@
 
   .home-text {
     position: absolute;
-    top: 75%;
+    top: 78%;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -24,7 +24,8 @@
       @extend .h1-font;
     }
 
-    h2 {
+    h3 {
+      @extend .h3-font;
       margin-top: 10px;
       //letter-spacing: 1px;
     }
