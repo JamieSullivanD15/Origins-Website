@@ -8,17 +8,24 @@
   background-attachment: fixed;
 }
 
-.parallax-image1 {
+.parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4 {
   @extend .main-content;
   @extend .parallax-image;
+}
+
+.parallax-image1 {
   background-image: url('/images/gym.jpg');
 
   .home-text {
     position: absolute;
-    top: 78%;
+    top: 68%;
     width: 100%;
     text-align: center;
     color: #fff;
+
+    .logo {
+      width: 140px;
+    }
 
     h1 {
       @extend .h1-font;
@@ -34,19 +41,13 @@
 } // .parallax-image1
 
 .parallax-image2 {
-  @extend .main-content;
-  @extend .parallax-image;
   background-image: url('/images/stretch.jpg');
 }
 
 .parallax-image3 {
-  @extend .main-content;
-  @extend .parallax-image;
   background-image: url('/images/felix-teep.jpg');
 }
 
 .parallax-image4 {
-  @extend .main-content;
-  @extend .parallax-image;
   background-image: url('/images/scott.jpg');
 }

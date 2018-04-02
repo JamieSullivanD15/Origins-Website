@@ -9,25 +9,15 @@ body, html {
 }
 
 header {
+  @extend .title-font;
   width: 100%;
   z-index: 2;
   background-color: $dark;
-  color: $white;
   position: fixed;
-  text-transform: uppercase;
-
-  .logo {
-    width: 80px;
-  }
-
-  .header-title {
-    font-family: $body-font;
-  }
 
   .menu-icon {
     cursor: pointer;
     border: none;
-    color: white;
     background-color: transparent;
     padding-top: 10px;
 

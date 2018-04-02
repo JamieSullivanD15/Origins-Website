@@ -1,13 +1,19 @@
 // Screens below 400px
 @media(max-width: $xs-bp) {
   .h1-font {
-    letter-spacing: 2px;
+    font-size: 21px;
+  }
+
+  .h2-font {
     font-size: 20px;
-    color: green;
   }
 
   .h3-font {
     font-size: 18px;
+  }
+
+  .paragraph-font {
+    font-size: 14px;
   }
 }
 
@@ -15,13 +21,22 @@
 @media(max-width: $sm-bp)
   and (min-width: $xs-bp) {
     .h1-font {
-      letter-spacing: 2px;
       font-size: 26px;
-      color: yellow;
+
+    }
+
+    .h2-font {
+      font-size: 22px;
+
     }
 
     .h3-font {
       font-size: 20px;
+
+    }
+
+    .paragraph-font {
+      font-size: 16px;
     }
 }
 
@@ -29,13 +44,22 @@
 @media(max-width: $md-bp)
   and (min-width: $sm-bp) {
     .h1-font {
-      letter-spacing: 2px;
-      font-size: 30px;
-      color: red;
+      font-size: 28px;
+
+    }
+
+    .h2-font {
+      font-size: 24px;
+
     }
 
     .h3-font {
       font-size: 22px;
+
+    }
+
+    .paragraph-font {
+      font-size: 17px;
     }
 }
 
@@ -43,13 +67,23 @@
 @media(max-width: $lg-bp)
   and (min-width: $md-bp) {
     .h1-font {
-      letter-spacing: 2px;
-      font-size: 34px;
-      color: orange;
+      font-size: 30px;
+
+    }
+
+    .h2-font {
+      font-size: 28px;
+
     }
 
     .h3-font {
       font-size: 24px;
+
+    }
+
+    .paragraph-font {
+      font-size: 18px;
+
     }
 }
 
@@ -57,31 +91,50 @@
 @media(max-width: $xl-bp)
   and (min-width: $lg-bp) {
     .h1-font {
-      letter-spacing: 2px;
-      font-size: 40px;
-      color: purple;
+      font-size: 32px;
+
+    }
+
+    .h2-font {
+      font-size: 30px;
+
     }
 
     .h3-font {
       font-size: 26px;
+
+    }
+
+    .paragraph-font {
+      font-size: 20px;
+
     }
 }
 
 // Screens above 1400px
 @media(min-width: $xl-bp) {
     .h1-font {
-      letter-spacing: 2px;
-      font-size: 40px;
-      color: blue;
+      font-size: 36px;
+
+    }
+
+    .h2-font {
+      font-size: 32px;
+
     }
 
     .h3-font {
-      font-size: 26px;
+      font-size: 28px;
+    }
+
+    .paragraph-font {
+      font-size: 21px;
+
     }
 }
 
-// Screens above 768px
-@media(min-width: $md-bp) {
+// Screens above 992px
+@media(min-width: $lg-bp) {
   .mobile-nav {
     visibility: hidden;
     transition: 0.0s;
@@ -96,18 +149,23 @@
   }
 }
 
+// Screens below 1400px
+@media(max-width: $xl-bp) {
+  .nav-font {
+    font-size: 22px;
+  }
+
+  .nav-style {
+    a {
+      padding: 35px 10px 10px 50px;
+    }
+  } // nav-style
+}
+
 // Screens below 992px
 @media(max-width: $lg-bp) {
   .side-nav {
     visibility: hidden;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .header-title {
-
   }
 
   .main-content {
@@ -124,8 +182,20 @@
     margin: 0 15px;
   }
 
-  // .timetable {
-  //   font-size: 11px;
-  //   letter-spacing: 0.1px;
-  // }
+  .timetable {
+    tr {
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+// Screens below 576px
+@media(max-width: $sm-bp) {
+  .timetable {
+    tr {
+      font-size: 10px;
+      letter-spacing: 0px;
+    }
+  }
 }

@@ -20,12 +20,21 @@ $heading-font: 'Merriweather', serif;
 $body-font: 'Lato', sans-serif;
 
 // SUPER CLASSES
-.header-font {
-  font-family: $heading-font;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 22px;
-  color: purple;
+// .header-font {
+//   font-family: $heading-font;
+//   font-weight: bold;
+//   letter-spacing: 1px;
+//   font-size: 22px;
+// }
+
+.title-font {
+    color: $white;
+    font-family: $body-font;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 5px 0;
 }
 
 .nav-font {
@@ -38,20 +47,16 @@ $body-font: 'Lato', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 40px;
-  //color: orange;
 }
 
 .h2-font {
   font-family: $heading-font;
-  //color: green;
 }
 
 .h3-font {
   font-family: $body-font;
-  //color: yellow;
 }
 
 .paragraph-font {
   font-family: $body-font;
-  //color: red;
 }

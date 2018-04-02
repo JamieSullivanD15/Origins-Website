@@ -104,7 +104,9 @@
   }
 
   .contact-info {
-    @extend .paragraph-font;
+    p {
+      @extend .paragraph-font;
+    }
 
     img {
       width: 22px;
@@ -125,7 +127,7 @@
   form {
     h3 {
       @extend .h3-font;
-      //font-size: 18px;
+      font-size: 1px;
       padding-top: 30px;
     }
 
