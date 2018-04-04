@@ -5,7 +5,7 @@
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1.5px;
-  padding: 5px 0; }
+  padding: 5px 0 5px 2%; }
 
 .nav-font, .nav-style, .side-nav, .mobile-nav {
   font-family: "Lato", sans-serif;
@@ -18,7 +18,8 @@
   font-size: 40px; }
 
 .h2-font, .about #about-text h2, .benefits h2, .contact h2 {
-  font-family: "Merriweather", serif; }
+  font-family: "Merriweather", serif;
+  padding-top: 25px; }
 
 .h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
   font-family: "Lato", sans-serif; }
@@ -31,11 +32,11 @@
   height: 100%;
   position: fixed;
   background-color: #0c0c0c;
-  overflow-x: hidden;
+  overflow: hidden;
   top: 0;
   left: 0; }
   .nav-style a, .side-nav a, .mobile-nav a {
-    padding: 40px 10px 10px 70px;
+    padding: 40px 10px 10px 20%;
     text-decoration: none;
     color: #fff;
     display: block;
@@ -49,14 +50,14 @@
   .side-nav .links a:after {
     content: '';
     position: absolute;
-    margin-left: 53px;
+    margin-left: 20%;
     bottom: 0;
     left: 0;
     width: 0%;
     border-bottom: 2px solid red;
-    transition: 0.4s; }
+    transition: 0.3s; }
   .side-nav .links a:hover:after {
-    width: 150px; }
+    width: 140px; }
 
 .mobile-nav {
   z-index: 3;
@@ -89,12 +90,12 @@
   background-image: url("/images/gym.jpg"); }
   .parallax-image1 .home-text {
     position: absolute;
-    top: 68%;
+    top: 65%;
     width: 100%;
     text-align: center;
-    color: #fff; }
+    color: #ffffff; }
     .parallax-image1 .home-text .logo {
-      width: 140px; }
+      width: 120px; }
     .parallax-image1 .home-text h3 {
       margin-top: 10px; }
 
@@ -109,7 +110,7 @@
 
 .about {
   min-height: 100vh;
-  background-color: #666666;
+  background-color: #333333;
   color: #fff;
   display: flex;
   align-items: center; }
@@ -118,50 +119,52 @@
   min-height: 100vh;
   background-color: #333333;
   color: #fff;
-  padding: 20px 0;
-  display: flex;
-  align-items: center; }
+  padding-top: 50px; }
   .timetable table {
     color: #000;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    border: 1px solid black;
+    text-align: center; }
     .timetable table th {
+      text-align: center;
+      color: #ffffff;
+      background-color: red;
       padding: 2px;
-      margin: 0; }
+      margin: 0;
+      border: 1.5px solid black; }
     .timetable table td {
       padding: 2px;
-      margin: 0; }
+      margin: 0;
+      border: 1.5px solid black; }
   .timetable .prices div {
-    padding-top: 10px;
-    padding-bottom: 10px; }
+    margin: 20px auto; }
 
 .benefits {
   min-height: 100vh;
-  background-color: #666666;
-  color: #fff;
-  display: flex;
-  align-items: center; }
-  .benefits h2 {
+  background-color: #333333;
+  color: #fff; }
+  .benefits ul h3 {
     padding-top: 20px; }
   .benefits ul li {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     margin-left: 20px; }
 
 .contact {
   min-height: 100vh;
   background-color: #333333;
-  color: #fff;
-  display: flex;
-  align-items: center; }
+  color: #fff; }
+  .contact h2 {
+    padding-bottom: 10px; }
   .contact .contact-info img {
-    width: 22px;
-    margin-right: 15px;
+    width: 24px;
+    margin-right: 5px;
     padding-bottom: 5px; }
   .contact .contact-info a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #ffffff; }
     .contact .contact-info a:hover {
-      color: orange; }
+      color: red; }
   .contact form h3 {
-    font-size: 1px;
     padding-top: 30px; }
   .contact form .form-group {
     margin: 0;
@@ -169,7 +172,13 @@
   .contact form textarea {
     resize: none; }
   .contact form .btn {
+    border: none;
+    color: #ffffff;
+    background-color: red;
     margin: 0 15px 0 auto; }
+    .contact form .btn:hover {
+      transition: 0.0s;
+      background-color: #0c0c0c; }
   .contact input[type=number]::-webkit-inner-spin-button,
   .contact input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -178,16 +187,14 @@
 
 .location {
   min-height: 100vh;
-  background-color: #666666;
   color: #fff; }
   .location .google-map {
     height: 100vh;
-    opacity: 0.9;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
-    filter: grayscale(80%); }
+    filter: grayscale(95%); }
 
 * {
   margin: 0;
@@ -211,7 +218,7 @@ header {
       outline: none; }
 
 footer {
-  background-color: #0c0c0c;
+  background-color: #333333;
   color: #fff;
   padding-top: 15px; }
   footer p {
@@ -227,7 +234,7 @@ footer {
 
 @media (max-width: 400px) {
   .h1-font, .parallax-image1 .home-text h1 {
-    font-size: 21px; }
+    font-size: 22px; }
   .h2-font, .about #about-text h2, .benefits h2, .contact h2 {
     font-size: 20px; }
   .h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
@@ -237,7 +244,7 @@ footer {
 
 @media (max-width: 576px) and (min-width: 400px) {
   .h1-font, .parallax-image1 .home-text h1 {
-    font-size: 26px; }
+    font-size: 24px; }
   .h2-font, .about #about-text h2, .benefits h2, .contact h2 {
     font-size: 22px; }
   .h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
@@ -247,7 +254,7 @@ footer {
 
 @media (max-width: 768px) and (min-width: 576px) {
   .h1-font, .parallax-image1 .home-text h1 {
-    font-size: 28px; }
+    font-size: 26px; }
   .h2-font, .about #about-text h2, .benefits h2, .contact h2 {
     font-size: 24px; }
   .h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
@@ -257,9 +264,9 @@ footer {
 
 @media (max-width: 992px) and (min-width: 768px) {
   .h1-font, .parallax-image1 .home-text h1 {
-    font-size: 30px; }
-  .h2-font, .about #about-text h2, .benefits h2, .contact h2 {
     font-size: 28px; }
+  .h2-font, .about #about-text h2, .benefits h2, .contact h2 {
+    font-size: 26px; }
   .h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
     font-size: 24px; }
   .paragraph-font, .about #about-text p, .timetable .prices div, .benefits ul p, .benefits ul li, .contact .contact-info p, .contact .contact-info a, footer p {
@@ -267,23 +274,47 @@ footer {
 
 @media (max-width: 1400px) and (min-width: 992px) {
   .h1-font, .parallax-image1 .home-text h1 {
+    font-size: 30px; }
+  .h2-font, .about #about-text h2, .benefits h2, .contact h2 {
+    font-size: 28px; }
+  .h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
+    font-size: 26px; }
+  .paragraph-font, .about #about-text p, .timetable .prices div, .benefits ul p, .benefits ul li, .contact .contact-info p, .contact .contact-info a, footer p {
+    font-size: 19px; } }
+
+@media (min-width: 1400px) {
+  .h1-font, .parallax-image1 .home-text h1 {
     font-size: 32px; }
   .h2-font, .about #about-text h2, .benefits h2, .contact h2 {
     font-size: 30px; }
   .h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
-    font-size: 26px; }
-  .paragraph-font, .about #about-text p, .timetable .prices div, .benefits ul p, .benefits ul li, .contact .contact-info p, .contact .contact-info a, footer p {
-    font-size: 20px; } }
-
-@media (min-width: 1400px) {
-  .h1-font, .parallax-image1 .home-text h1 {
-    font-size: 36px; }
-  .h2-font, .about #about-text h2, .benefits h2, .contact h2 {
-    font-size: 32px; }
-  .h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
     font-size: 28px; }
   .paragraph-font, .about #about-text p, .timetable .prices div, .benefits ul p, .benefits ul li, .contact .contact-info p, .contact .contact-info a, footer p {
-    font-size: 21px; } }
+    font-size: 20px; }
+  .parallax-image1 .home-text .logo {
+    width: 150px; }
+  table {
+    height: 700px; }
+  .benefits ul h3 {
+    padding-top: 40px; }
+  .benefits ul li {
+    padding-bottom: 10px; }
+  .contact h2 {
+    padding-bottom: 20px; }
+  .contact .contact-info img {
+    width: 30px; }
+  .contact form h3 {
+    padding-bottom: 10px; }
+  .contact form input {
+    height: 60px; }
+  .contact form .form-group {
+    margin-bottom: 2px;
+    padding: 0; }
+  .contact form .btn {
+    width: 220px;
+    height: 50px;
+    font-size: 22px;
+    margin: 0 15px 0 auto; } }
 
 @media (min-width: 992px) {
   .mobile-nav {
@@ -298,16 +329,21 @@ footer {
   .nav-font, .nav-style, .side-nav, .mobile-nav {
     font-size: 22px; }
   .nav-style a, .side-nav a, .mobile-nav a {
-    padding: 35px 10px 10px 50px; } }
+    padding: 35px 10px 10px 20%; } }
 
 @media (max-width: 992px) {
   .side-nav {
     visibility: hidden; }
+  .title-font, header {
+    font-size: 20px;
+    padding: 0px 0 0px 2%; }
   .main-content, .parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4, .about, .timetable, .benefits, .contact, .location, footer {
     width: 100%;
     float: none; }
   .parallax-image, .parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4 {
     background-attachment: scroll; }
+  .parallax-image1 .home-text .logo {
+    width: 100px; }
   #form-button {
     width: 100%;
     margin: 0 15px; }
@@ -318,4 +354,36 @@ footer {
 @media (max-width: 576px) {
   .timetable tr {
     font-size: 10px;
-    letter-spacing: 0px; } }
+    letter-spacing: 0px; }
+  .title-font, header {
+    font-size: 16px; }
+  .parallax-image1 .home-text .logo {
+    width: 80px; } }
+
+@media (max-height: 700px) {
+  .parallax-image1 .home-text {
+    top: 60%; }
+  .side-nav {
+    padding-top: 80px; }
+  .nav-font, .nav-style, .side-nav, .mobile-nav {
+    font-size: 20px; }
+  .nav-style a, .side-nav a, .mobile-nav a {
+    padding: 40px 10px 2px 20%; } }
+
+@media (max-height: 600px) {
+  .parallax-image1 .home-text {
+    top: 55%; }
+  .nav-style a, .side-nav a, .mobile-nav a {
+    padding: 35px 10px 0px 20%; } }
+
+@media (max-height: 500px) {
+  .nav-style a, .side-nav a, .mobile-nav a {
+    padding: 20px 10px 0px 20%; } }
+
+@media (max-height: 400px) {
+  .parallax-image1 .home-text {
+    top: 40%; }
+    .parallax-image1 .home-text .logo {
+      width: 80px; }
+  .nav-style a, .side-nav a, .mobile-nav a {
+    padding: 10px 10px 0px 20%; } }

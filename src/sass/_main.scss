@@ -29,8 +29,8 @@ header {
 
 footer {
   @extend .main-content;
-  background-color: $primary;
-  color: set-text-color($primary);
+  background-color: $dark;
+  color: set-text-color($dark);
   padding-top: 15px;
 
   p {

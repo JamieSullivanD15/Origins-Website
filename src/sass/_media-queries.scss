@@ -1,7 +1,7 @@
 // Screens below 400px
 @media(max-width: $xs-bp) {
   .h1-font {
-    font-size: 21px;
+    font-size: 22px;
   }
 
   .h2-font {
@@ -21,7 +21,7 @@
 @media(max-width: $sm-bp)
   and (min-width: $xs-bp) {
     .h1-font {
-      font-size: 26px;
+      font-size: 24px;
 
     }
 
@@ -44,7 +44,7 @@
 @media(max-width: $md-bp)
   and (min-width: $sm-bp) {
     .h1-font {
-      font-size: 28px;
+      font-size: 26px;
 
     }
 
@@ -67,12 +67,12 @@
 @media(max-width: $lg-bp)
   and (min-width: $md-bp) {
     .h1-font {
-      font-size: 30px;
+      font-size: 28px;
 
     }
 
     .h2-font {
-      font-size: 28px;
+      font-size: 26px;
 
     }
 
@@ -91,12 +91,12 @@
 @media(max-width: $xl-bp)
   and (min-width: $lg-bp) {
     .h1-font {
-      font-size: 32px;
+      font-size: 30px;
 
     }
 
     .h2-font {
-      font-size: 30px;
+      font-size: 28px;
 
     }
 
@@ -106,20 +106,18 @@
     }
 
     .paragraph-font {
-      font-size: 20px;
-
+      font-size: 19px;
     }
 }
 
 // Screens above 1400px
 @media(min-width: $xl-bp) {
     .h1-font {
-      font-size: 36px;
-
+      font-size: 32px;
     }
 
     .h2-font {
-      font-size: 32px;
+      font-size: 30px;
 
     }
 
@@ -128,9 +126,67 @@
     }
 
     .paragraph-font {
-      font-size: 21px;
-
+      font-size: 20px;
     }
+
+    .parallax-image1 {
+      .home-text {
+        .logo {
+          width: 150px;
+        }
+      } // home-text
+    } // .parallax-image1
+
+    table {
+      height: 700px;
+    } // table
+
+    .benefits {
+      ul {
+        h3 {
+          padding-top: 40px;
+        }
+
+        li {
+          padding-bottom: 10px;
+        }
+      }
+
+    } // benefits
+
+    .contact {
+      h2 {
+        padding-bottom: 20px;
+      }
+
+      .contact-info {
+        img {
+          width: 30px;
+        }
+      } // contact-info
+
+      form {
+        h3 {
+          padding-bottom: 10px;
+        }
+
+        input {
+          height: 60px;
+        }
+
+        .form-group {
+          margin-bottom: 2px;
+          padding: 0;
+        }
+
+        .btn {
+          width: 220px;
+          height:50px;
+          font-size: 22px;
+          margin: 0 15px 0 auto;
+        }
+      } // form
+    } // contact
 }
 
 // Screens above 992px
@@ -142,7 +198,7 @@
     a {
       transition: 0.0s;
     }
-  }
+  } // mobile-nav
 
   .menu-icon {
     display: none;
@@ -157,7 +213,7 @@
 
   .nav-style {
     a {
-      padding: 35px 10px 10px 50px;
+      padding: 35px 10px 10px 20%;
     }
   } // nav-style
 }
@@ -168,6 +224,11 @@
     visibility: hidden;
   }
 
+  .title-font {
+    font-size: 20px;
+    padding: 0px 0 0px 2%;
+  }
+
   .main-content {
     width: 100%;
     float: none;
@@ -176,6 +237,14 @@
   .parallax-image {
     background-attachment: scroll;
   }
+
+  .parallax-image1 {
+    .home-text {
+      .logo {
+        width: 100px;
+      }
+    } // home-text
+  } // .parallax-image1
 
   #form-button {
     width: 100%;
@@ -198,4 +267,83 @@
       letter-spacing: 0px;
     }
   }
+
+  .title-font {
+    font-size: 16px;
+  }
+
+  .parallax-image1 {
+    .home-text {
+      .logo {
+        width: 80px;
+      }
+    } // home-text
+  } // .parallax-image1
+}
+
+// -- SCREEN HEIGHTS --
+// Screens height below 700px
+@media(max-height: 700px) {
+  .parallax-image1 {
+    .home-text {
+      top: 60%;
+    } // home-text
+  } // .parallax-image1
+
+  .side-nav {
+    padding-top: 80px;
+  } //side-nav
+
+  .nav-font {
+    font-size: 20px;
+  }
+
+  .nav-style {
+    a {
+      padding: 40px 10px 2px 20%;
+    }
+  } // nav-style
+}
+
+// Screens height below 600px
+@media(max-height: 600px) {
+  .parallax-image1 {
+    .home-text {
+      top: 55%;
+    } // home-text
+  } // .parallax-image1
+
+  .nav-style {
+    a {
+      padding: 35px 10px 0px 20%;
+    }
+  } // nav-style
+}
+
+// Screens height below 500px
+@media(max-height: 500px) {
+  .nav-style {
+    a {
+      padding: 20px 10px 0px 20%;
+    }
+  } // nav-style
+}
+
+// Screens height below 400px
+@media(max-height: 400px) {
+  .parallax-image1 {
+    .home-text {
+      top: 40%;
+
+      .logo {
+        width: 80px;
+      }
+    } // home-text
+  } // .parallax-image1
+
+  .nav-style {
+    a {
+      padding: 10px 10px 0px 20%;
+    }
+  } // nav-style
 }
