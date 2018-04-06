@@ -22,17 +22,14 @@
   and (min-width: $xs-bp) {
     .h1-font {
       font-size: 24px;
-
     }
 
     .h2-font {
       font-size: 22px;
-
     }
 
     .h3-font {
       font-size: 20px;
-
     }
 
     .paragraph-font {
@@ -45,17 +42,14 @@
   and (min-width: $sm-bp) {
     .h1-font {
       font-size: 26px;
-
     }
 
     .h2-font {
       font-size: 24px;
-
     }
 
     .h3-font {
       font-size: 22px;
-
     }
 
     .paragraph-font {
@@ -68,22 +62,18 @@
   and (min-width: $md-bp) {
     .h1-font {
       font-size: 28px;
-
     }
 
     .h2-font {
       font-size: 26px;
-
     }
 
     .h3-font {
       font-size: 24px;
-
     }
 
     .paragraph-font {
       font-size: 18px;
-
     }
 }
 
@@ -92,17 +82,14 @@
   and (min-width: $lg-bp) {
     .h1-font {
       font-size: 30px;
-
     }
 
     .h2-font {
       font-size: 28px;
-
     }
 
     .h3-font {
       font-size: 26px;
-
     }
 
     .paragraph-font {
@@ -118,7 +105,6 @@
 
     .h2-font {
       font-size: 30px;
-
     }
 
     .h3-font {
@@ -187,7 +173,7 @@
         }
       } // form
     } // contact
-}
+} // Screens above 1400px
 
 // Screens above 992px
 @media(min-width: $lg-bp) {
@@ -203,7 +189,7 @@
   .menu-icon {
     display: none;
   }
-}
+} // Screens above 992px
 
 // Screens below 1400px
 @media(max-width: $xl-bp) {
@@ -216,7 +202,7 @@
       padding: 35px 10px 10px 20%;
     }
   } // nav-style
-}
+} // Screens below 1400px
 
 // Screens below 992px
 @media(max-width: $lg-bp) {
@@ -257,7 +243,7 @@
       letter-spacing: 0.5px;
     }
   }
-}
+} // Screens below 992px
 
 // Screens below 576px
 @media(max-width: $sm-bp) {
@@ -279,9 +265,10 @@
       }
     } // home-text
   } // .parallax-image1
-}
+} // Screens below 576px
 
-// -- SCREEN HEIGHTS --
+
+/* ----- SCREEN HEIGHTS ----- */
 // Screens height below 700px
 @media(max-height: 700px) {
   .parallax-image1 {
@@ -303,7 +290,7 @@
       padding: 40px 10px 2px 20%;
     }
   } // nav-style
-}
+} // Screens height below 700px
 
 // Screens height below 600px
 @media(max-height: 600px) {
@@ -318,7 +305,7 @@
       padding: 35px 10px 0px 20%;
     }
   } // nav-style
-}
+} // Screens height below 600px
 
 // Screens height below 500px
 @media(max-height: 500px) {
@@ -327,7 +314,7 @@
       padding: 20px 10px 0px 20%;
     }
   } // nav-style
-}
+} // Screens height below 500px
 
 // Screens height below 400px
 @media(max-height: 400px) {
@@ -346,4 +333,4 @@
       padding: 10px 10px 0px 20%;
     }
   } // nav-style
-}
+} // Screens height below 400px

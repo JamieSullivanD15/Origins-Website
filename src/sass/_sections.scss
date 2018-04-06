@@ -10,10 +10,6 @@
     h2 {
       @extend .h2-font;
     }
-    p {
-      //font-size: 16px;
-      @extend .paragraph-font;
-    }
   }
 } // about
 
@@ -22,7 +18,7 @@
   min-height: $section-height;
   background-color: $dark;
   color: set-text-color($dark);
-  padding-top: 50px;
+  padding-top: 30px;
 
   table {
     color: set-text-color($white);
@@ -49,7 +45,7 @@
   .prices {
     div {
       @extend .paragraph-font;
-      margin: 20px auto;
+      margin-bottom: 20px;
     }
   }
 } //timetable
@@ -70,17 +66,12 @@
       padding-top: 20px;
     }
 
-    p {
-      @extend .paragraph-font;
-    }
-
     li {
       @extend .paragraph-font;
       padding-bottom: 8px;
       margin-left: 20px;
     }
   }
-
 } // benefits
 
 .contact {
@@ -95,10 +86,6 @@
   }
 
   .contact-info {
-    p {
-      @extend .paragraph-font;
-    }
-
     img {
       width: 24px;
       margin-right: 5px;
@@ -139,7 +126,7 @@
 
       &:hover {
         transition: 0.0s;
-        background-color: $primary;
+        background-color: $dark-red;
       }
     }
   } // form

@@ -1,4 +1,5 @@
 
+// SECTION HEIGHT
 $section-height: 100vh;
 
 // COLOURS
@@ -8,7 +9,7 @@ $dark: #333333;
 $light: #999999;
 $white: #ffffff;
 $red: red;
-$dark-red: purple;
+$dark-red: $light;
 
 // BREAKPOINTS
 $xs-bp: 400px;  // Small Phones   < 400
@@ -22,13 +23,6 @@ $heading-font: 'Merriweather', serif;
 $body-font: 'Lato', sans-serif;
 
 // SUPER CLASSES
-// .header-font {
-//   font-family: $heading-font;
-//   font-weight: bold;
-//   letter-spacing: 1px;
-//   font-size: 22px;
-// }
-
 .title-font {
   color: $white;
   font-family: $body-font;

@@ -8,6 +8,10 @@ body, html {
   font-family: $body-font;
 }
 
+p {
+  @extend .paragraph-font;
+}
+
 header {
   @extend .title-font;
   width: 100%;
@@ -34,7 +38,6 @@ footer {
   padding-top: 15px;
 
   p {
-    @extend .paragraph-font;
     float: right;
   }
 } // footer
