@@ -19,7 +19,7 @@
 
 .h2-font, .about #about-text h2, .benefits h2, .contact h2 {
   font-family: "Merriweather", serif;
-  padding-top: 25px; }
+  padding-top: 20px; }
 
 .h3-font, .parallax-image1 .home-text h3, .benefits ul h3, .contact form h3 {
   font-family: "Lato", sans-serif; }
@@ -31,7 +31,7 @@
   text-transform: uppercase;
   height: 100%;
   position: fixed;
-  background-color: #0c0c0c;
+  background-color: #141414;
   overflow: hidden;
   top: 0;
   left: 0; }
@@ -42,11 +42,27 @@
     display: block;
     position: relative; }
 
+.active {
+  color: #DB0A11 !important; }
+  .active a:active {
+    color: #DB0A11; }
+  .active a:after {
+    content: '';
+    position: absolute;
+    margin-left: 20%;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #DB0A11;
+    transition: 0.3s; }
+  .active a:active:after {
+    width: 140px; }
+
 .side-nav {
   width: 20%;
   padding-top: 170px; }
   .side-nav .links a:hover {
-    color: red; }
+    color: #DB0A11; }
   .side-nav .links a:after {
     content: '';
     position: absolute;
@@ -54,7 +70,7 @@
     bottom: 0;
     left: 0;
     width: 0%;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #DB0A11;
     transition: 0.3s; }
   .side-nav .links a:hover:after {
     width: 140px; }
@@ -84,10 +100,11 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: scroll; }
 
 .parallax-image1 {
-  background-image: url("/images/gym.jpg"); }
+  background-image: url("/images/gym.jpg");
+  background-attachment: fixed; }
   .parallax-image1 .home-text {
     position: absolute;
     top: 65%;
@@ -95,7 +112,8 @@
     text-align: center;
     color: #ffffff; }
     .parallax-image1 .home-text .logo {
-      width: 120px; }
+      width: 120px;
+      margin-bottom: 10px; }
     .parallax-image1 .home-text h3 {
       margin-top: 10px; }
 
@@ -103,12 +121,13 @@
   background-image: url("/images/stretch.jpg"); }
 
 .parallax-image3 {
-  background-image: url("/images/felix-teep.jpg"); }
+  background-image: url("/images/group.jpg"); }
 
 .parallax-image4 {
-  background-image: url("/images/scott.jpg"); }
+  background-image: url("/images/felix.jpg"); }
 
 .about {
+  position: relative;
   min-height: 100vh;
   background-color: #333333;
   color: #fff;
@@ -128,7 +147,7 @@
     .timetable table th {
       text-align: center;
       color: #ffffff;
-      background-color: red;
+      background-color: #DB0A11;
       padding: 2px;
       margin: 0;
       border: 1.5px solid black; }
@@ -163,7 +182,7 @@
     text-decoration: none;
     color: #ffffff; }
     .contact .contact-info a:hover {
-      color: red; }
+      color: #DB0A11; }
   .contact form h3 {
     padding-top: 30px; }
   .contact form .form-group {
@@ -174,7 +193,7 @@
   .contact form .btn {
     border: none;
     color: #ffffff;
-    background-color: red;
+    background-color: #DB0A11;
     margin: 0 15px 0 auto; }
     .contact form .btn:hover {
       transition: 0.0s;
@@ -194,7 +213,7 @@
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
-    filter: grayscale(95%); }
+    filter: grayscale(75%); }
 
 * {
   margin: 0;
@@ -204,10 +223,13 @@ body, html {
   height: 100%;
   font-family: "Lato", sans-serif; }
 
+section .container {
+  padding: 30px 20px; }
+
 header {
   width: 100%;
   z-index: 2;
-  background-color: #333333;
+  background-color: #050505;
   position: fixed; }
   header .menu-icon {
     cursor: pointer;
@@ -218,7 +240,7 @@ header {
       outline: none; }
 
 footer {
-  background-color: #333333;
+  background-color: #141414;
   color: #fff;
   padding-top: 15px; }
   footer p {

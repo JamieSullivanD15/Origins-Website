@@ -31,26 +31,26 @@
 
     <div id="side-menu" class="side-nav">
       <div class="links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Timetable</a>
-        <a href="#">Benefits</a>
-        <a href="#">Contact</a>
-        <a href="#">Location</a>
+        <a id="#home-link" class="active" href="#home-section">Home</a>
+        <a id="#about-link" href="#about-section">About</a>
+        <a id="#timetable-link" href="#timetable-section">Timetable</a>
+        <a id="#benefits-link" href="#benefits-section">Benefits</a>
+        <a id="#contact-link" href="#contact-section">Contact</a>
+        <a id="#location-link" href="#location-section">Location</a>
       </div>
     </div> <!-- side-menu -->
 
     <div id="mobile-menu" class="mobile-nav">
       <button href="#" class="btn-close" onclick="closeSideMenu()">&times;</button>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Timetable</a>
-      <a href="#">Benefits</a>
-      <a href="#">Contact</a>
-      <a href="#">Location</a>
+      <a href="#home-section">Home</a>
+      <a href="#about-section">About</a>
+      <a href="#timetable-section">Timetable</a>
+      <a href="#benefits-section">Benefits</a>
+      <a href="#contact-section">Contact</a>
+      <a href="#location-section">Location</a>
     </div> <!-- mobile-menu -->
 
-    <div class="parallax-image1">
+    <div id="home-section" class="parallax-image1">
       <div class="home-text">
         <img class="logo" src="/images/logo.png" alt="Home-Image">
         <span>
@@ -60,7 +60,7 @@
       </div>
     </div> <!-- parallax-image1 -->
 
-    <section class="about">
+    <section id="about-section" class="about">
       <div class="container">
         <div class="row">
 
@@ -87,9 +87,9 @@
       </div> <!-- container -->
     </section> <!-- about -->
 
-    <div class="parallax-image2"></div>
+    <div id="p2" class="parallax-image2"></div>
 
-    <section class="timetable">
+    <section id="timetable-section" class="timetable">
       <div class="container">
         <div class="table-responsive">
           <table class="table table-hover table-bordered table-sm">
@@ -159,7 +159,7 @@
 
     <div class="parallax-image3"></div>
 
-    <section class="benefits">
+    <section id="benefits-section" class="benefits">
       <div class="container">
 
         <div class="row">
@@ -212,7 +212,7 @@
 
     <div class="parallax-image4"></div>
 
-    <section class="contact">
+    <section id="contact-section" class="contact">
       <div class="container">
 
         <div class="col contact-info">
@@ -305,13 +305,13 @@
       </div> <!-- container -->
     </section> <!-- contact -->
 
-    <section class="location">
+    <section id="location-section" class="location">
       <div id="map" class="google-map">
 
       </div>
     </section> <!-- location -->
 
-    <footer>
+    <footer id="footer">
       <div class="container">
 
         <div class="row align-items-center">

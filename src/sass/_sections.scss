@@ -1,8 +1,9 @@
 .about {
   @extend .main-content;
+  position: relative;
   min-height: $section-height;
-  background-color: $dark;
-  color: set-text-color($dark);
+  background-color: $primary;
+  color: set-text-color($primary);
   display: flex;
   align-items: center;
 
@@ -16,8 +17,8 @@
 .timetable {
   @extend .main-content;
   min-height: $section-height;
-  background-color: $dark;
-  color: set-text-color($dark);
+  background-color: $primary;
+  color: set-text-color($primary);
   padding-top: 30px;
 
   table {
@@ -53,8 +54,8 @@
 .benefits {
   @extend .main-content;
   min-height: $section-height;
-  background-color: $dark;
-  color: set-text-color($dark);
+  background-color: $primary;
+  color: set-text-color($primary);
 
   h2 {
     @extend .h2-font;
@@ -77,8 +78,8 @@
 .contact {
   @extend .main-content;
   min-height: $section-height;
-  background-color: $dark;
-  color: set-text-color($dark);
+  background-color: $primary;
+  color: set-text-color($primary);
 
   h2 {
     @extend .h2-font;
@@ -126,7 +127,7 @@
 
       &:hover {
         transition: 0.0s;
-        background-color: $dark-red;
+        background-color: $light;
       }
     }
   } // form
@@ -143,7 +144,7 @@
 .location {
   @extend .main-content;
   min-height: $section-height;
-  color: set-text-color($dark);
+  color: set-text-color($primary);
 
   .google-map {
     height: $section-height;
@@ -152,6 +153,6 @@
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
-    filter: grayscale(95%);
+    filter: grayscale(75%);
   }
 } //location
