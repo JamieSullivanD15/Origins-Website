@@ -1,0 +1,58 @@
+
+// SECTION HEIGHT
+$section-height: 100vh;
+
+// COLOURS
+$primary: #333333;
+$secondary: #141414;
+$dark: #050505;
+$light: #999999;
+$white: #ffffff;
+$red: #DB0A11;
+
+// BREAKPOINTS
+$xs-bp: 400px;  // Small Phones   < 400
+$sm-bp: 576px;  // Big Phones     < 576
+$md-bp: 768px;  // Tablets        < 768
+$lg-bp: 992px;  // Small Laptops  > 992 < 1400
+$xl-bp: 1400px; // Desktops       > 1400
+
+// FONTS
+$heading-font: 'Merriweather', serif;
+$body-font: 'Lato', sans-serif;
+
+// SUPER CLASSES
+.title-font {
+  color: $white;
+  font-family: $body-font;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  padding: 5px 0 5px 2%;
+}
+
+.nav-font {
+  font-family: $body-font;
+  font-size: 26px;
+}
+
+.h1-font {
+  font-family: $heading-font;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+
+.h2-font {
+  font-family: $heading-font;
+  padding-top: 20px;
+}
+
+.h3-font {
+  font-family: $body-font;
+}
+
+.paragraph-font {
+  font-family: $body-font;
+}
