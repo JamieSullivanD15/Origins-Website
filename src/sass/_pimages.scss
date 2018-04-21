@@ -5,33 +5,36 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
+}
+
+.parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4 {
+  @extend .main-content;
+  @extend .parallax-image;
 }
 
 .parallax-image1 {
-  @extend .main-content;
-  @extend .parallax-image;
   background-image: url('/images/gym.jpg');
+  background-attachment: fixed;
 
   .home-text {
     position: absolute;
-    top: 60%;
+    top: 65%;
     width: 100%;
     text-align: center;
-    color: #fff;
+    color: $white;
 
-    img {
-      width: 110px;
+    .logo {
+      width: 120px;
+      margin-bottom: 10px;
     }
 
     h1 {
-      @extend .header-font;
-      text-transform: uppercase;
-      margin-top: 15px;
-      letter-spacing: 2px;
+      @extend .h1-font;
     }
 
-    h2 {
+    h3 {
+      @extend .h3-font;
       margin-top: 10px;
       //letter-spacing: 1px;
     }
@@ -40,19 +43,13 @@
 } // .parallax-image1
 
 .parallax-image2 {
-  @extend .main-content;
-  @extend .parallax-image;
   background-image: url('/images/stretch.jpg');
 }
 
 .parallax-image3 {
-  @extend .main-content;
-  @extend .parallax-image;
-  background-image: url('/images/felix-teep.jpg');
+  background-image: url('/images/group.jpg');
 }
 
 .parallax-image4 {
-  @extend .main-content;
-  @extend .parallax-image;
-  background-image: url('/images/scott.jpg');
+  background-image: url('/images/felix.jpg');
 }

@@ -8,19 +8,26 @@ body, html {
   font-family: $body-font;
 }
 
+section {
+  .container {
+    padding: 30px 20px;
+  }
+}
+
+p {
+  @extend .paragraph-font;
+}
+
 header {
-  @extend .header-font;
+  @extend .title-font;
   width: 100%;
   z-index: 2;
-  background-color: $primary;
-  color: $white;
+  background-color: $dark;
   position: fixed;
-  text-transform: uppercase;
 
   .menu-icon {
     cursor: pointer;
     border: none;
-    color: white;
     background-color: transparent;
     padding-top: 10px;
 
@@ -32,12 +39,11 @@ header {
 
 footer {
   @extend .main-content;
-  background-color: $primary;
-  color: set-text-color($primary);
+  background-color: $secondary;
+  color: set-text-color($secondary);
   padding-top: 15px;
 
   p {
-    font-size: 14px;
     float: right;
   }
 } // footer

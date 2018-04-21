@@ -13,14 +13,17 @@
   <body>
 
     <header class="row m-0 align-items-center">
-      <span class="col-10">Origins Muay-Thai</span>
+      <span class="col-10 col-md-11">
+        <!-- <a href="#"><img class="logo" src="/images/logo.png" alt="Home-Image"></a> -->
+        <span class="header-title">Origins Muay-Thai</span>
+      </span>
 
-      <span class="col-2">
+      <span class="col-2 col-md-1">
         <button href="#" onclick="openSideMenu()" class="menu-icon">
           <svg width="30" height="30">
-            <path d="M0,5 30,5" stroke="#fff" stroke-width="4"/>
-            <path d="M0,14 30,14" stroke="#fff" stroke-width="4"/>
-            <path d="M0,23 30,23" stroke="#fff" stroke-width="4"/>
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
           </svg>
         </button>
       </span>
@@ -28,46 +31,45 @@
 
     <div id="side-menu" class="side-nav">
       <div class="links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Timetable</a>
-        <a href="#">Benefits</a>
-        <a href="#">Contact</a>
-        <a href="#">Location</a>
+        <a id="#home-link" class="active" href="#home-section">Home</a>
+        <a id="#about-link" href="#about-section">About</a>
+        <a id="#timetable-link" href="#timetable-section">Timetable</a>
+        <a id="#benefits-link" href="#benefits-section">Benefits</a>
+        <a id="#contact-link" href="#contact-section">Contact</a>
+        <a id="#location-link" href="#location-section">Location</a>
       </div>
     </div> <!-- side-menu -->
 
     <div id="mobile-menu" class="mobile-nav">
       <button href="#" class="btn-close" onclick="closeSideMenu()">&times;</button>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Timetable</a>
-      <a href="#">Benefits</a>
-      <a href="#">Contact</a>
-      <a href="#">Location</a>
+      <a href="#home-section">Home</a>
+      <a href="#about-section">About</a>
+      <a href="#timetable-section">Timetable</a>
+      <a href="#benefits-section">Benefits</a>
+      <a href="#contact-section">Contact</a>
+      <a href="#location-section">Location</a>
     </div> <!-- mobile-menu -->
 
-    <div class="parallax-image1">
+    <div id="home-section" class="parallax-image1">
       <div class="home-text">
         <img class="logo" src="/images/logo.png" alt="Home-Image">
         <span>
           <h1>The original birthplace of Muay-Thai in Dublin</h1>
-          <h2>11 Arbour Place, Stoneybatter, Dublin 7</h2>
+          <h3>11 Arbour Place, Stoneybatter, Dublin 7</h3>
         </span>
       </div>
     </div> <!-- parallax-image1 -->
 
-
-    <section class="about">
+    <section id="about-section" class="about">
       <div class="container">
         <div class="row">
 
-          <div class="col-12 col-md-5">
+          <div class="col-12 col-md-6">
             <img class="img-fluid" src="/images/fighter.jpg" alt="Fighter">
           </div> <!-- column 1 -->
 
-          <div id="about-text" class="col-12 col-md-7">
-            <h3>Our Story</h3>
+          <div id="about-text" class="col-12 col-md-6">
+            <h2>Our Story</h2>
             <p>
               In existence since 1999 our coaches and fighters have
               vast experience in both coaching and fighting in the art
@@ -85,52 +87,52 @@
       </div> <!-- container -->
     </section> <!-- about -->
 
-    <div class="parallax-image2"></div>
+    <div id="p2" class="parallax-image2"></div>
 
-    <section class="timetable">
+    <section id="timetable-section" class="timetable">
       <div class="container">
         <div class="table-responsive">
           <table class="table table-hover table-bordered table-sm">
             <tr>
               <th>Mon</th>
-              <td>Slam Fitness<br>Circuit Classes<br>7:00am-8:00am</td>
-              <td>Muay-Thai<br>All Levels<br>11:00am-12:00pm</td>
-              <td>Muay-Thai<br>All Levels<br>7:00pm-8:45pm</td>
+              <td><strong>Slam Fitness</strong><br>Circuit Classes<br>7:00am-8:00am</td>
+              <td><strong>Muay-Thai</strong><br>All Levels<br>11:00am-12:00pm</td>
+              <td><strong>Muay-Thai</strong><br>All Levels<br>7:00pm-8:45pm</td>
               <td></td>
             </tr>
             <tr>
               <th>Tue</th>
               <td></td>
               <td></td>
-              <td>Muay-Thai<br>All Levels<br>7:00pm-8:15pm</td>
-              <td>Muay-Thai<br>Fighters<br>8:15pm-10:00pm</td>
+              <td><strong>Muay-Thai</strong><br>All Levels<br>7:00pm-8:15pm</td>
+              <td><strong>Muay-Thai</strong><br>Fighters<br>8:15pm-10:00pm</td>
             </tr>
             <tr>
               <th>Wed</th>
-              <td>Slam Fitness<br>Circuit Classes<br>7:00am-8:00am</td>
-              <td>Muay-Thai<br>All Levels<br>11:00am-12:00pm</td>
-              <td>Muay-Thai<br>All Levels<br>7:00pm-8:45pm</td>
+              <td><strong>Slam Fitness</strong><br>Circuit Classes<br>7:00am-8:00am</td>
+              <td><strong>Muay-Thai</strong><br>All Levels<br>11:00am-12:00pm</td>
+              <td><strong>Muay-Thai</strong><br>All Levels<br>7:00pm-8:45pm</td>
               <td></td>
             </tr>
             <tr>
               <th>Thu</th>
               <td></td>
               <td></td>
-              <td>Muay-Thai<br>All Levels<br>7:00pm-8:15pm</td>
-              <td>Muay-Thai<br>Fighters<br>8:15pm-10:00pm</td>
+              <td><strong>Muay-Thai</strong><br>All Levels<br>7:00pm-8:15pm</td>
+              <td><strong>Muay-Thai</strong><br>Fighters<br>8:15pm-10:00pm</td>
             </tr>
             <tr>
               <th>Fri</th>
-              <td>Slam Fitness<br>Circuit Classes<br>7:00am-8:00am</td>
-              <td>Muay-Thai<br>All Levels<br>11:00am-12:00pm</td>
-              <td>Sparring<br>Intermediate<br>6:30pm-8:30pm</td>
+              <td><strong>Slam Fitness</strong><br>Circuit Classes<br>7:00am-8:00am</td>
+              <td><strong>Muay-Thai</strong><br>All Levels<br>11:00am-12:00pm</td>
+              <td><strong>Sparring</strong><br>Intermediate<br>6:30pm-8:30pm</td>
               <td></td>
             </tr>
             <tr>
               <th>Sat</th>
-              <td>Kids Muay-Thai<br>8-14 yrs<br>11:15am-12:00am</td>
-              <td>Pads & Conditioning<br>All Levels<br>11:00am-12:00pm</td>
-              <td>Strength Circuit Class<br>All Levels<br>12:00pm-1:0pm</td>
+              <td><strong>Kids Muay-Thai</strong><br>8-14 yrs<br>11:15am-12:00am</td>
+              <td><strong>Pads & Conditioning</strong><br>All Levels<br>11:00am-12:00pm</td>
+              <td><strong>Strength Circuit Class</strong><br>All Levels<br>12:00pm-1:0pm</td>
               <td></td>
             </tr>
           </table> <!-- table -->
@@ -157,14 +159,14 @@
 
     <div class="parallax-image3"></div>
 
-    <section class="benefits">
+    <section id="benefits-section" class="benefits">
       <div class="container">
 
         <div class="row">
           <div class="col">
-            <h3>Benefits of Muay-Thai</h3>
+            <h2>Benefits of Muay-Thai</h2>
             <ul>
-              <h4>Physical Benefits</h4>
+              <h3>Physical Benefits</h3>
               <p>
                 <em>
                   Muay-Thai workouts can greatly enhance physical fitness.
@@ -183,7 +185,7 @@
                 The combination of throwing punches, kicks, knees and elbows provides a total body workout and develops amazing core strength.
               </li>
 
-              <h4>Mental Benefits</h4>
+              <h3>Mental Benefits</h3>
               <p>
                 <em>
                   Muay-Thai strengthens not only the body, but also the mind.
@@ -210,29 +212,38 @@
 
     <div class="parallax-image4"></div>
 
-    <section class="contact">
+    <section id="contact-section" class="contact">
       <div class="container">
 
         <div class="col contact-info">
-          <h3>Contact Us</h3>
+          <h2>Contact Us</h2>
 
           <div class="row">
             <div class="col-12 col-md-6">
-              <img src="/images/email.png"> originsmuaythai@gmail.com <br>
-              <img src="/images/marker.png"> 11 Arbour Place, Dublin 7
+              <p>
+                <img src="/images/email-logo.png"> originsmuaythai@gmail.com
+              </p>
+              <p>
+                <img src="/images/marker-logo.png">
+                11 Arbour Place, Dublin 7
+              </p>
             </div>
             <div class="col-12 col-md-6">
-              <img src="/images/phone.png"> 087-2591425 <br>
-              <a href="https://www.facebook.com/groups/50779987803/" target="_blank">
-                <img src="/images/facebook.png">
-                Join our group
-              </a>
+              <p>
+                <img src="/images/phone.png"> 087-2591425
+              </p>
+              <p>
+                <a href="https://www.facebook.com/groups/50779987803/" target="_blank">
+                  <img src="/images/facebook.png">
+                  Join our group
+                </a>
+              </p>
             </div>
           </div>
 
           <form id="contact-form">
             <fieldset class="form-group">
-              <legend>Any Questions?</legend>
+              <h3>Any Questions?</h3>
 
               <div class="form-group row align-items-center">
                 <div class="form-group col-12">
@@ -282,7 +293,7 @@
               <div class="row d-flex pb-4">
 
                 <button class="btn" id="form-button"
-                type="button" onclick="logInfo()">Send Message</button>
+                type="button" role="button" onclick="logInfo()">Send Message</button>
 
               </div>
 
@@ -294,13 +305,13 @@
       </div> <!-- container -->
     </section> <!-- contact -->
 
-    <section class="location">
+    <section id="location-section" class="location">
       <div id="map" class="google-map">
 
       </div>
     </section> <!-- location -->
 
-    <footer>
+    <footer id="footer">
       <div class="container">
 
         <div class="row align-items-center">
